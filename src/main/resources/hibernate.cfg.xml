@@ -1,0 +1,32 @@
+<!--
+  ~ Hibernate, Relational Persistence for Idiomatic Java
+  ~
+  ~ License: GNU Lesser General Public License (LGPL), version 2.1 or later.
+  ~ See the lgpl.txt file in the root directory or <http://www.gnu.org/licenses/lgpl-2.1.html>.
+  -->
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/register_office</property> <!-- BD Mane -->
+        <property name="connection.driver_class">org.postgresql.Driver</property> <!-- DB Driver -->
+        <property name="connection.username">dev</property> <!-- DB User -->
+        <property name="connection.password">dev</property> <!-- DB Password -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.connection.characterEncoding">utf-8</property>
+        <property name="default_schema">public</property>
+        <property name="hibernate.connection.current_session_context_class">thread</property>
+        <mapping class="com.home.register.domain.Person"/>
+        <mapping class="com.home.register.domain.Passport"/>
+        <mapping class="com.home.register.domain.PersonMale"/>
+        <mapping class="com.home.register.domain.PersonFemale"/>
+        <mapping class="com.home.register.domain.BirthCertificate"/>
+        <mapping class="com.home.register.domain.MarriageCertificate"/>
+
+
+    </session-factory>
+</hibernate-configuration>
