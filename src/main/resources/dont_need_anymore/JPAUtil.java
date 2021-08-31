@@ -1,4 +1,4 @@
-package com.home.register.test;
+package dont_need_anymore;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;

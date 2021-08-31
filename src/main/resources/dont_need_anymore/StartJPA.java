@@ -1,4 +1,4 @@
-package com.home.register.test;
+package dont_need_anymore;
 
 
 import com.home.register.domain.Person;

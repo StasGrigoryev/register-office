@@ -1,4 +1,4 @@
-package com.home.register.test;
+package dont_need_anymore;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -12,7 +12,7 @@ public class HibernateUtil {
     static {
         // get services registry
         final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
-                .configure("hibernate.cfg.xml") // read settings from hibernate.cfg.xml (should be in classpath)
+                .configure("dont_need_anymore/hibernate.cfg.xml") // read settings from hibernate.cfg.xml (should be in classpath)
                 .build();
 
         try {
